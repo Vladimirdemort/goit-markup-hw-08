@@ -107,6 +107,16 @@ body {
 }
 
 /* Job */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 
 .title {
   font-weight: 700;
@@ -133,6 +143,12 @@ body {
 }
 
 /* Footer */
+.footer-bcg {
+  background-color: #2f303a;
+}
+.address {
+  font-style: inherit;
+}
 .footer-logo {
   font-family: Raleway, sans-serif;
   text-decoration: none;
@@ -177,6 +193,10 @@ body {
   cursor: pointer;
 }
 .portfolio-button:hover {
+  background-color: var(--hover-color);
+  color: var(--white-text);
+}
+.portfolio-button:active {
   background-color: var(--hover-color);
   color: var(--white-text);
 }
