@@ -7,6 +7,7 @@
   --hover-color: #2196f3;
   --title-color: #212121;
   --text-color: #757575;
+  --white-text: #ffffff;
 }
 
 body {
@@ -41,8 +42,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.link:hover,
-:focus {
+.link:hover {
+  color: var(--hover-color);
+}
+.link:focus {
+  color: var(--hover-color);
+}
+.link:active {
   color: var(--hover-color);
 }
 
@@ -56,8 +62,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contact-list:hover,
-:focus {
+.contact-list:hover {
+  color: var(--hover-color);
+}
+.contact-list:focus {
   color: var(--hover-color);
 }
 
@@ -71,7 +79,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   background-color: #2f303a;
-  color: #ffffff;
+  color: var(--white-text);
 }
 
 .button {
@@ -79,7 +87,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   background-color: var(--hover-color);
-  color: #ffffff;
+  color: var(--white-text);
   cursor: pointer;
 }
 
@@ -128,7 +136,7 @@ body {
 .footer-logo {
   font-family: Raleway, sans-serif;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white-text);
 
   font-size: 26px;
   line-height: 1.2;
@@ -138,17 +146,20 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-text);
 }
 .footer-contacts {
+  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-contacts:hover,
-:focus {
+.footer-contacts:hover {
+  color: var(--hover-color);
+}
+.footer-contacts:focus {
   color: var(--hover-color);
 }
 
@@ -167,7 +178,7 @@ body {
 }
 .portfolio-button:hover {
   background-color: var(--hover-color);
-  color: #ffffff;
+  color: var(--white-text);
 }
 .portfolio-title {
   font-weight: 700;
