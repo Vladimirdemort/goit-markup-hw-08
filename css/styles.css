@@ -48,9 +48,8 @@ body {
 .link:focus {
   color: var(--hover-color);
 }
-.link.is-active{
+.link.is-active {
   color: var(--hover-color);
-}
 }
 
 /* Contacts */
