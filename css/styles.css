@@ -43,15 +43,18 @@ img {
   padding-bottom: 94px;
 }
 /* Header */
-/* Logo */
+
+.header-page {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-container {
   display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
 }
-
+/* Logo */
 .logo {
   margin-right: 93px;
 
