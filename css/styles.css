@@ -428,7 +428,6 @@ img {
 .footer-socials {
   margin-left: 70px;
   margin-bottom: 100px;
-  margin-right: auto;
 }
 .footer-socials-text {
   font-size: 14px;
@@ -489,9 +488,64 @@ img {
 .footer-socials-icons-svg {
   fill: #ffffff;
 }
-/* .footer-socials-icons-link:hover > .footer-socials-icons-svg,
-.footer-socials-icons-link:focus > .footer-socials-icons-svg {
-  fill: #ffffff;
+
+.footer-form-place {
+  margin-left: 93px;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form-field {
+  margin-top: 20px;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white-text);
+}
+.footer-form-field::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+}
+.subscribe-button {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0px;
+
+  color: var(--white-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.subscribe-button-icon {
+  fill: white;
+}
+/* .subscribe-button::after {
+  background-image: url(../images/sprite.svg#icon-send);
+  fill: yellow;
+  width: 24px;
+  height: 24px;
 } */
 
 /*          Portfolio            */
@@ -640,6 +694,7 @@ img {
   position: relative;
   width: 528px;
   height: 581px;
+  padding: 40px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -655,4 +710,52 @@ img {
   border-radius: 50%;
   text-align: center;
   box-sizing: border-box;
+}
+.modal-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+.label-name {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.modal-form-input {
+  width: 448px;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-form-input::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+  padding-top: 12px;
+  padding-left: 16px;
 }
