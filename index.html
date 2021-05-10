@@ -586,7 +586,11 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <div class="modal">
-          <button class="modal-btn-close" data-modal-close>X</button>
+          <button class="modal-btn-close" data-modal-close>
+            <svg class="close-icon" width="11px" height="11px">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
           <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
           <form class="modal-form">
             <div class="modal-form-field">
@@ -628,21 +632,28 @@
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
             </div>
-            <label for="comment" class="label-name">Комментарий</label>
-            <textarea
-              name="comment"
-              id="comment"
-              cols="30"
-              rows="10"
-              class="modal-form-input"
-              placeholder="Введите текст"
-            ></textarea>
-            <input type="checkbox" name="" id="" />
-            <label for=""
+            <div>
+              <label for="comment" class="label-name">Комментарий</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="53"
+                rows="6"
+                class="modal-textarea"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              class="checkbox visually-hidden"
+            />
+            <label for="checkbox" class="checkbox-text"
               >Соглашаюсь с рассылкой и принимаю
-              <a href="#">Условия договора</a></label
+              <a href="#" class="checkbox-link">Условия договора</a></label
             >
-            <button type="submit">Отправить</button>
+            <button type="submit" class="submit-button">Отправить</button>
           </form>
         </div>
       </div>
