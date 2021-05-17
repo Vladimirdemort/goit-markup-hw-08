@@ -14,12 +14,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.0.0/normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <a href="./index.html" class="logo"
+      <div class="container header__container">
+        <a href="./index.html" class="logo header__logo"
           ><span class="logo__item">Web</span>Studio</a
         >
         <nav class="navigation">
@@ -294,10 +294,10 @@
         </div>
       </section>
     </main>
-    <footer class="footer__bcg">
+    <footer class="footer footer__bcg">
       <div class="container footer__container">
         <div>
-          <a href="./index.html" class="footer-logo"
+          <a href="./index.html" class="logo footer__logo"
             ><span class="logo__item">Web</span>Studio</a
           >
           <address class="address">
@@ -316,7 +316,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-socials">
+        <div class="footer__socials">
           <p class="footer__socials-text">ПРИСОЕДИНЯЙТЕСЬ</p>
           <ul class="footer__socials-icons">
             <li class="footer__socials-icons--item">
@@ -335,7 +335,7 @@
                 </svg>
               </a>
             </li>
-            <li class="soc-icons__item">
+            <li class="footer__socials-icons--item">
               <a
                 class="footer__socials-icons--link"
                 href=""
@@ -394,7 +394,10 @@
               class="footer__form--field"
               placeholder="E-mail"
             />
-            <button type="submit" class="subscribe-button">
+            <button
+              type="submit"
+              class="subscribe-button subscribe-button__size"
+            >
               Подписаться
               <svg class="subscribe-button__icon" width="24px" height="24px">
                 <use href="./images/sprite.svg#icon-send"></use>

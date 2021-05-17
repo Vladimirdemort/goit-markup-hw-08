@@ -1,0 +1,36 @@
+.soc-icons {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 0px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.soc-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
+  &:hover > .soc-icons__svg,
+  &:focus > .soc-icons__svg {
+    fill: #ffffff;
+  }
+}
+.soc-icons__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-icons__svg {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
