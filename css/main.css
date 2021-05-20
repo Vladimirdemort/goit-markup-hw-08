@@ -296,6 +296,8 @@ img {
   border-radius: 4px;
   width: 448px;
   outline: none;
+  padding-top: 12px;
+  padding-left: 16px;
 }
 
 .form__textarea:focus-within {
@@ -307,8 +309,6 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  padding-top: 11px;
-  padding-left: 15px;
 }
 
 .form__checkbox-label {
@@ -706,10 +706,11 @@ img {
   margin-right: 12px;
   width: 358px;
   height: 50px;
+  padding-left: 16px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  font-family: Roboto;
+  font-family: roboto, sans-serif;
   font-size: 16px;
   line-height: 1.25;
   color: var(--white-text);
@@ -719,7 +720,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
-  padding-left: 16px;
 }
 
 .portfolio {

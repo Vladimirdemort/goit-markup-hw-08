@@ -114,6 +114,8 @@
   border-radius: 4px;
   width: 448px;
   outline: none;
+  padding-top: 12px;
+  padding-left: 16px;
 
   &:focus-within {
     border: 1px solid var(--hover-color);
@@ -125,8 +127,6 @@
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
-    padding-top: 11px;
-    padding-left: 15px;
   }
 }
 
