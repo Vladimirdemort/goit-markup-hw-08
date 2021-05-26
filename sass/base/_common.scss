@@ -5,6 +5,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 body {
   font-family: roboto, sans-serif;
@@ -19,6 +20,8 @@ p {
 }
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
