@@ -1018,6 +1018,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    align-items: flex-start;
+  }
+}
+
 .address {
   font-style: inherit;
 }
@@ -1032,6 +1038,12 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list__item {
+    text-align: start;
+  }
 }
 
 .footer__socials {
@@ -1059,6 +1071,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--white-text);
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__socials-text {
+    text-align: start;
+  }
 }
 
 .footer__contacts {
