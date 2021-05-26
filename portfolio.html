@@ -17,26 +17,28 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo header__logo"
           ><span class="logo__item">Web</span>Studio</a
         >
         <nav class="navigation">
-          <ul class="menu list">
-            <li class="menu__item">
+          <ul class="navigation-menu list">
+            <li class="navigation-menu__item">
               <a href="./index.html" class="link">Студия</a>
             </li>
-            <li class="menu__item">
+            <li class="navigation-menu__item">
               <a href="./portfolio.html" class="link is-active">Портфолио</a>
             </li>
-            <li class="menu__item"><a href="" class="link">Контакты</a></li>
+            <li class="navigation-menu__item">
+              <a href="" class="link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="menu list">
           <li class="menu__item">
             <a href="mailto:info@devstudio.com" class="contact-list">
-              <svg class="address-icon" width="16px" height="12px">
+              <svg class="address-icon" width="14px" height="12px">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -44,15 +46,90 @@
           </li>
           <li class="menu__item">
             <a href="tel:+380961111111" class="contact-list"
-              ><svg class="address-icon" width="10px" height="16px">
+              ><svg class="address-icon" width="10px" height="14px">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button class="mobile-menu__button" data-menu-button>
+          <svg width="24px" height="16px">
+            <use
+              class="mobile-menu__icon"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="mobile-menu__icon-close"
+              href="./images/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li>
+          <a href="tel:+380961111111" class="mobile-menu__tel"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="mobile-menu__mail"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__socials-items">
+          <a
+            href=""
+            target="_blank"
+            rel="noonpener noreferer"
+            class="mobile-menu__socials-link"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-menu__socials-items">
+          <a
+            href=""
+            target="_blank"
+            rel="noonpener noreferer"
+            class="mobile-menu__socials-link"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-menu__socials-items">
+          <a
+            href=""
+            target="_blank"
+            rel="noonpener noreferer"
+            class="mobile-menu__socials-link"
+            >Facebook</a
+          >
+        </li>
+        <li class="">
+          <a
+            href=""
+            target="_blank"
+            rel="noonpener noreferer"
+            class="mobile-menu__socials-link"
+            >Linkedin</a
+          >
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="section">
         <div class="container">
@@ -83,6 +160,10 @@
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
                   <img
+                    srcset="
+                      ./images/portfolio/img1.jpg    1x,
+                      ./images/portfolio/img1@2x.jpg 2x
+                    "
                     src="./images/portfolio/img1.jpg"
                     alt="Ноутбук с сайтом"
                     width="370"
@@ -107,6 +188,10 @@
               <a href="" class="portfolio__link"
                 ><div class="portfolio__thumb">
                   <img
+                    srcset="
+                      ./images/portfolio/img2.jpg    1x,
+                      ./images/portfolio/img2@2x.jpg 2x
+                    "
                     src="./images/portfolio/img2.jpg"
                     alt="Игра в баскетбол"
                     width="370"
@@ -128,7 +213,11 @@
               <a href="" class="portfolio__link"
                 ><div class="portfolio__thumb">
                   <img
-                    src="./images/portfolio/img3.jpg"
+                    srcset="
+                      ./images/portfolio/img3.jpg    1x,
+                      ./images/portfolio/img1@2x.jpg 2x
+                    "
+                    src="./images/portfolio/3mg3.jpg"
                     alt="Логотип ресторана"
                     width="370"
                   />
@@ -151,6 +240,10 @@
               <a href="" class="portfolio__link"
                 ><div class="portfolio__thumb">
                   <img
+                    srcset="
+                      ./images/portfolio/img4.jpg    1x,
+                      ./images/portfolio/img4@2x.jpg 2x
+                    "
                     src="./images/portfolio/img4.jpg"
                     alt="Наушники"
                     width="370"
@@ -175,6 +268,10 @@
               <a href="" class="portfolio__link"
                 ><div class="portfolio__thumb">
                   <img
+                    srcset="
+                      ./images/portfolio/img5.jpg    1x,
+                      ./images/portfolio/img5@2x.jpg 2x
+                    "
                     src="./images/portfolio/img5.jpg"
                     alt="Коробки"
                     width="370"
@@ -199,6 +296,10 @@
               <a href="" class="portfolio__link"
                 ><div class="portfolio__thumb">
                   <img
+                    srcset="
+                      ./images/portfolio/img6.jpg    1x,
+                      ./images/portfolio/img6@2x.jpg 2x
+                    "
                     src="./images/portfolio/img6.jpg"
                     alt="Монитор с сайтом"
                     width="370"
@@ -223,6 +324,10 @@
               <a href="" class="portfolio__link"
                 ><div class="portfolio__thumb">
                   <img
+                    srcset="
+                      ./images/portfolio/img7.jpg    1x,
+                      ./images/portfolio/img7@2x.jpg 2x
+                    "
                     src="./images/portfolio/img7.jpg"
                     alt="Книга"
                     width="370"
@@ -247,6 +352,10 @@
               <a href="" class="portfolio__link"
                 ><div class="portfolio__thumb">
                   <img
+                    srcset="
+                      ./images/portfolio/img8.jpg    1x,
+                      ./images/portfolio/img8@2x.jpg 2x
+                    "
                     src="./images/portfolio/img8.jpg"
                     alt="Этикетка"
                     width="370"
@@ -271,6 +380,10 @@
               <a href="" class="portfolio__link"
                 ><div class="portfolio__thumb">
                   <img
+                    srcset="
+                      ./images/portfolio/img9.jpg    1x,
+                      ./images/portfolio/img9@2x.jpg 2x
+                    "
                     src="./images/portfolio/img9.jpg"
                     alt="Ноутбук"
                     width="370"
@@ -294,9 +407,9 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer footer__bcg">
+    <footer class="footer footer__bcg">
       <div class="container footer__container">
-        <div>
+        <div class="footer__address">
           <a href="./index.html" class="logo footer__logo"
             ><span class="logo__item">Web</span>Studio</a
           >
@@ -308,7 +421,7 @@
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
+              <li class="footer-list__item">
                 <a href="tel:+380961111111" class="footer__contacts"
                   >+38 096 111 11 11</a
                 >
@@ -406,6 +519,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
